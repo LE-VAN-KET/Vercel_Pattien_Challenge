@@ -34,7 +34,7 @@ optionsList.forEach(o => {
 
 // count down timer and action
 
-    var totalTime = 1800;
+    var totalTime = 60;
     var secondsRemaining = totalTime;
     var locatX = -1;
     var locatY = -1;
@@ -59,18 +59,18 @@ optionsList.forEach(o => {
       console.log("bool-timer:" + bool);
 
         //thoi gian con lai cho nay (Y)
-      if (Math.round(secondsRemaining) == 1795) {
-        var gift = document.getElementById("gift-content1").innerHTML = '<a href="https://www.google.com">Bộ sưu tập ảnh gái xinh</a>';
+      if (Math.round(secondsRemaining) == 40) {
+        var gift = document.getElementById("gift-content1").innerHTML = '<a href="https://www.google.com/search?q=g%C3%A1i+xinh&rlz=1C1KNTJ_enVN979VN979&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi3xfn78aT2AhU2QfUHHTCmCacQ_AUoAXoECAEQAw&biw=1745&bih=890&dpr=1.1">Bộ sưu tập ảnh gái xinh</a>';
        
       }
 
-      if (Math.round(secondsRemaining) == 1790) {
-        var gift = document.getElementById("gift-content2").innerHTML ='<a href="https://stackoverflow.com/questions/4935101/audio-src-change-with-javascript">Bộ sưu tập ảnh gái xinh part 2</a>';
+      if (Math.round(secondsRemaining) == 20) {
+        var gift = document.getElementById("gift-content2").innerHTML ='<a href="https://www.google.com/search?q=g%C3%A1i+xinh+ph%E1%BA%A7n+2&tbm=isch&ved=2ahUKEwjM3Nz88aT2AhUITfUHHTqEA40Q2-cCegQIABAA&oq=g%C3%A1i+xinh+ph%E1%BA%A7n+2&gs_lcp=CgNpbWcQAzoICAAQgAQQsQM6BAgAEAM6CwgAEIAEELEDEIMBOgUIABCABDoECAAQQzoKCAAQsQMQgwEQQzoHCAAQsQMQQzoGCAAQBRAeOgYIABAIEB5Q8AhYshFg0xJoA3AAeACAAXiIAcIIkgEDOC4zmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bA4eYsz2Hoia1e8PuoiO6Ag&bih=890&biw=1745&rlz=1C1KNTJ_enVN979VN979">Bộ sưu tập ảnh gái xinh part 2</a>';
         
       }
 
-      if (Math.round(secondsRemaining) == 1788) {
-        var gift = document.getElementById("gift-content3").innerHTML ='<a href="https://www.youtube.com/watch?v=PagxnFSkfCs">Bộ sưu tập ảnh gái không xinh nhưng nude =]]</a>';
+      if (Math.round(secondsRemaining) == 1) {
+        var gift = document.getElementById("gift-content3").innerHTML ='<a href="https://www.google.com/search?q=tr%E1%BA%A7n+%C4%91%E1%BB%A9c+bo+kh%E1%BB%8Fa+th%C3%A2n&tbm=isch&ved=2ahUKEwi8tLuS8qT2AhVSEXAKHeMsBK4Q2-cCegQIABAA&oq=tr%E1%BA%A7n+%C4%91%E1%BB%A9c+bo+kh%E1%BB%8Fa+th%C3%A2n&gs_lcp=CgNpbWcQAzoECAAQAzoFCAAQgAQ6CAgAELEDEIMBOggIABCABBCxAzoECAAQEzoICAAQBRAeEBM6BAgAEEM6CggAELEDEIMBEEM6BwgAELEDEEM6CwgAEIAEELEDEIMBOgQIABAeOgYIABAFEB46BggAEAgQHjoECAAQGFCqFFjOMWDkMmgPcAB4BIAB6wGIAa8dkgEHMTkuMTYuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=mg4eYrz_BdKiwAPj2ZDwCg&bih=890&biw=1745&rlz=1C1KNTJ_enVN979VN979">Bộ sưu tập ảnh gái không xinh nhưng nude =]]</a>';
      
         //Swal.fire('Địt mẹ giỏi lắm') 
       }
