@@ -108,7 +108,7 @@ optionsList.forEach(o => {
                   var gift = document.getElementById("gift-content2").innerHTML = '';
                   var gift = document.getElementById("gift-content3").innerHTML = '';
       
-                  alert("con chó này, kiên trì lên");
+                  alert("Đồ ngốc này, kiên trì lên");
                 }
             } 
             $(document).ready(function(){
