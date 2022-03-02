@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 60%;
   margin-top: 80px;
 }
@@ -21,12 +22,13 @@ h3 {
   text-align: center;
 }
 
-
 body {
   color: blue;
   font-family: Arial, Geneva, Kalimati, sans-serif;
   font-size: 13px;
-  background: #000000 url(https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/noob.jpg?v=1646136464957) center center fixed no-repeat;
+  background: #000000
+    url(https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/noob.jpg?v=1646136464957)
+    center center fixed no-repeat;
   -moz-background-size: cover;
   background-size: cover;
   margin: 0;
@@ -34,8 +36,6 @@ body {
   text-align: center;
   color: white;
   opacity: 0.6;
-
-
 }
 
 a {
@@ -47,14 +47,13 @@ a {
 
 .gift {
   margin-top: 100px;
- /* // ghi vao cho nay vi du*/
-  
+  /* // ghi vao cho nay vi du*/
 }
 
 .container {
   text-align: center;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .select-box {
