@@ -1,8 +1,14 @@
-// import Swal from 'sweetalert2'
 
 // CommonJS
-//const Swal = require('sweetalert2')
-//select music
+const Swal = require('sweetalert2')
+
+Swal.fire({
+  title: 'Error!',
+  text: 'Do you want to continue',
+  icon: 'error',
+  confirmButtonText: 'Cool'
+})
+
 
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
@@ -106,7 +112,7 @@ addEvent(window, "load", function (e) {
         var gift = (document.getElementById("gift-content2").innerHTML = "");
         var gift = (document.getElementById("gift-content3").innerHTML = "");
 
-        alert("Đồ ngốc này, kiên trì lên");
+        //alert("Đồ ngốc này, kiên trì lên"); do thang nay :()
       }
     }
     $(document).ready(function () {
