@@ -1,7 +1,11 @@
 
 // CommonJS
-import swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js';
 
+ var filerefjs = document.createElement('script');
+ filerefjs.setAttribute("type", "text/javascript");
+ filerefjs.setAttribute("src", "sweetalert.all.min.js");
+
+ 
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
 
@@ -57,7 +61,7 @@ function timerFunc(bool) {
   if (secondsRemaining <= 0) {
     secondsRemaining = totalTime;
     alert("abc ");
-    Swal.a
+    sweetAlert('error', "Enter A valid email please", 'error');
   }
   console.log("bool-timer:" + bool);
 
@@ -135,7 +139,7 @@ function runtime(hasFocus) {
 }
 
 function showDialog() {
-  swal.fire({
+  Swal.fire({
   icon: 'success',
   title: 'Your work has been saved'
 });

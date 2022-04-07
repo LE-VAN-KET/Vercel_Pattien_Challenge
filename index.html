@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
-
+<!--     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script> -->
+    <script src="sweetalert2.all.min.js"></script>
     <!-- 
       This is an HTML comment
       You can write text in a comment and the content won't be visible in the page
@@ -31,7 +31,18 @@
         />
       </audio>
     </div>
-
+  <button onclick="test()">
+    ssss
+    </button>
+    <script>
+      function test() {
+        Swal.fire({
+  icon: 'success',
+  title: 'Your work has been saved'
+});
+      }
+        
+    </script>
     <h3>Pick Music</h3>
     <div class="container">
       <div class="select-box">
