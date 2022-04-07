@@ -1,6 +1,6 @@
 
 // CommonJS
-
+import swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js';
 
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
@@ -132,4 +132,11 @@ function runtime(hasFocus) {
   abc = setInterval(function () {
     timerFunc(hasFocus);
   }, 100);
+}
+
+function showDialog() {
+  swal.fire({
+  icon: 'success',
+  title: 'Your work has been saved'
+});
 }
