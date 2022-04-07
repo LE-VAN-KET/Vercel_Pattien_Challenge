@@ -60,8 +60,8 @@ function timerFunc(bool) {
   }
   if (secondsRemaining <= 0) {
     secondsRemaining = totalTime;
-    alert("abc ");
-    sweetAlert('error', "Enter A valid email please", 'error');
+       showDialog();
+   
   }
   console.log("bool-timer:" + bool);
 
@@ -108,7 +108,7 @@ addEvent(window, "load", function (e) {
         var gift = (document.getElementById("gift-content1").innerHTML = "");
         var gift = (document.getElementById("gift-content2").innerHTML = "");
         var gift = (document.getElementById("gift-content3").innerHTML = "");
-
+     
         //alert("Đồ ngốc này, kiên trì lên"); do thang nay :()
       }
     }
@@ -144,3 +144,5 @@ function showDialog() {
   title: 'Your work has been saved'
 });
 }
+
+//thoi de toi lam cai nya 
