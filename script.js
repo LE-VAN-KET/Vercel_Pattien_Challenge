@@ -1,13 +1,5 @@
 
 // CommonJS
-const Swal = require('sweetalert2')
-
-Swal.fire({
-  title: 'Error!',
-  text: 'Do you want to continue',
-  icon: 'error',
-  confirmButtonText: 'Cool'
-})
 
 
 const selected = document.querySelector(".selected");
@@ -65,6 +57,7 @@ function timerFunc(bool) {
   if (secondsRemaining <= 0) {
     secondsRemaining = totalTime;
     alert("abc ");
+    Swal.a
   }
   console.log("bool-timer:" + bool);
 
