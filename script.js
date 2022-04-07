@@ -141,8 +141,6 @@ function runtime(hasFocus) {
 function showDialog() {
   Swal.fire({
   icon: 'success',
-  title: 'Your work has been saved'
+  title: 'Chuc mung'
 });
 }
-
-//thoi de toi lam cai nya 
