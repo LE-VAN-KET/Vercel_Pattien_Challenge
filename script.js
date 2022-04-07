@@ -29,11 +29,12 @@ optionsList.forEach((o) => {
 
 // count down timer and action
 
-var totalTime = 60;
+var totalTime = 10;
 var secondsRemaining = totalTime;
 var locatX = -1;
 var locatY = -1;
 var hasFocus = true;
+
 var abc = setInterval(function () {
   timerFunc(hasFocus);
 }, 100);
@@ -55,8 +56,9 @@ function timerFunc(bool) {
   } else {
     secondsRemaining = totalTime;
   }
-  if (secondsRemaining == 0) {
+  if (secondsRemaining <= 0) {
     secondsRemaining = totalTime;
+    alert("abc ");
   }
   console.log("bool-timer:" + bool);
 

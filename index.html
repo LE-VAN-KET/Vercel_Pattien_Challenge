@@ -14,14 +14,13 @@
     <style></style>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="width:100%; height:100%">
-
+  <body style="width: 100%; height: 100%">
     <h1>Vui lòng không thao tác với bàn phím và chuột</h1>
     <h2>
       Hãy thư giản và tập trung vào âm nhạc. <br />
       Đeo tai nghe để có trải nghiệm tốt nhất.
     </h2>
-    <h1> <p id="timer">1:00</p> </h1>
+    <h1><p id="timer">1:00</p></h1>
     <div>
       <audio controls autoplay id="myAudio">
         <source
@@ -31,54 +30,76 @@
       </audio>
     </div>
 
-    
-
-    <h3>Pick Music</h3>  
-    <div class="container" >
-     
+    <h3>Pick Music</h3>
+    <div class="container">
       <div class="select-box">
-          <div class="options-container">
-            
-            <div class="option">
-              <input type="audio/mpeg" class="radio" id="Sound1" name="category" src="https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/1.mp3?v=1646136378902" />
-              <label for="Sound1">Music 1</label>
-            </div>
-
-            <div class="option">
-              <input type="radio" class="radio" id="Sound2" name="category" value="./audio/2.mp3"/>
-              <label for="Sound2">Music 2</label>
-            </div>
-
-            <div class="option">
-              <input type="radio" class="radio" id="Sound3" name="category" value="./audio/3.mp3"/>
-              <label for="Sound3">Music 3</label>
-            </div>
-
-             <div class="option">
-              <input type="radio" class="radio" id="Sound4" name="category" value="./audio/4.mp3"/>
-              <label for="Sound4">Music 4</label>
-            </div>
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="audio/mpeg"
+              class="radio"
+              id="Sound1"
+              name="category"
+              value="https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/1.mp3?v=1646136378902"
+            />
+            <label for="Sound1">Music 1</label>
+          </div>
           
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="Sound2"
+              name="category"
+              value="https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/2.mp3?v=1646136440343"
+            />
+            <label for="Sound2">Music 2</label>
           </div>
 
-          <div class="selected">
-            Chọn your music
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="Sound3"
+              name="category"
+              value="./audio/3.mp3"
+            />
+            <label for="Sound3">Music 3</label>
+          </div>
+
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="Sound4"
+              name="category"
+              value="./audio/4.mp3"
+            />
+            <label for="Sound4">Music 4</label>
           </div>
         </div>
+
+        <div class="selected">Chọn your music</div>
       </div>
+    </div>
 
-
-      <div class="gift">
-        <h2 id="gift-content1"></h2>
-        <h2 id="gift-content2"></h2>
-        <h2 id="gift-content3"></h2>
-      </div>
-  
-
+    <div class="gift">
+      <h2 id="gift-content1"></h2>
+      <h2 id="gift-content2"></h2>
+      <h2 id="gift-content3"></h2>
+    </div>
   </body>
 
   <script src="script.js"></script>
-<!--   <script src="./sweetalert2.js"></script> -->
-  <script type="text/javascript" charset="UTF-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-  <script type="text/javascript" charset="UTF-8" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js"></script>
+  <!--   <script src="./sweetalert2.js"></script> -->
+  <script
+    type="text/javascript"
+    charset="UTF-8"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    charset="UTF-8"
+    src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js"
+  ></script>
 </html>
