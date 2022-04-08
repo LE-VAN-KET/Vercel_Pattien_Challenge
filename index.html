@@ -24,6 +24,7 @@
     <style>
       body {
           font-family: 'Grape Nuts';
+          caret-color: transparent;
       }
     </style>
     
@@ -48,6 +49,7 @@
     </div>
     
 <!--     audio -->
+    
     <div style="margin-top:50px;">
       <audio controls autoplay id="myAudio">
         <source
@@ -58,6 +60,7 @@
     </div>
     
 <!--   time picker   -->
+    
     <div class="container" style="width:200px; margin-top:50px">
       <div class="row">
           <div class="col-sm-12">
@@ -73,65 +76,69 @@
 
       </div>
   </div>
-
-    <h3>Pick Music</h3>
-    <div class="container">
-      <div class="select-box">
-        <div class="options-container">
-          <div class="option">
-            <input
-              type="audio/mpeg"
-              class="radio"
-              id="Sound1"
-              name="category"
-              value="https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/1.mp3?v=1646136378902"
-            />
-            <label for="Sound1">Music 1</label>
-          </div>
-
-          <div class="option">
-            <input
-              type="radio"
-              class="radio"
-              id="Sound2"
-              name="category"
-              value="https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/2.mp3?v=1646136440343"
-            />
-            <label for="Sound2">Music 2</label>
-          </div>
-
-          <div class="option">
-            <input
-              type="radio"
-              class="radio"
-              id="Sound3"
-              name="category"
-              value="./audio/3.mp3"
-            />
-            <label for="Sound3">Music 3</label>
-          </div>
-
-          <div class="option">
-            <input
-              type="radio"
-              class="radio"
-              id="Sound4"
-              name="category"
-              value="./audio/4.mp3"
-            />
-            <label for="Sound4">Music 4</label>
-          </div>
+  
+<!--  select music -->
+    
+  <h3>Chọn nhạc</h3>
+  <div class="container">
+    <div class="select-box">
+      <div class="options-container">
+        <div class="option">
+          <input
+            type="audio/mpeg"
+            class="radio"
+            id="Sound1"
+            name="category"
+            value="https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/1.mp3?v=1646136378902"
+          />
+          <label for="Sound1">Music 1</label>
         </div>
 
-        <div class="selected">Chọn your music</div>
-      </div>
-    </div>
+        <div class="option">
+          <input
+            type="radio"
+            class="radio"
+            id="Sound2"
+            name="category"
+            value="https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/2.mp3?v=1646136440343"
+          />
+          <label for="Sound2">Music 2</label>
+        </div>
 
-    <div class="gift">
-      <h2 id="gift-content1"></h2>
-      <h2 id="gift-content2"></h2>
-      <h2 id="gift-content3"></h2>
+        <div class="option">
+          <input
+            type="radio"
+            class="radio"
+            id="Sound3"
+            name="category"
+            value="./audio/3.mp3"
+          />
+          <label for="Sound3">Music 3</label>
+        </div>
+
+        <div class="option">
+          <input
+            type="radio"
+            class="radio"
+            id="Sound4"
+            name="category"
+            value="./audio/4.mp3"
+          />
+          <label for="Sound4">Music 4</label>
+        </div>
+      </div>
+
+      <div class="selected">Mặc định</div>
     </div>
+  </div>
+    
+<!-- gift -->
+    
+  <div class="gift">
+    <h2 id="gift-content1"></h2>
+    <h2 id="gift-content2"></h2>
+    <h2 id="gift-content3"></h2>
+  </div>
     
     
 <!--      -->

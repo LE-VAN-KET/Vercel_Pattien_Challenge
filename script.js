@@ -1,14 +1,9 @@
 
-// CommonJS
 
- var filerefjs = document.createElement('script');
- filerefjs.setAttribute("type", "text/javascript");
- filerefjs.setAttribute("src", "sweetalert.all.min.js");
 
- 
+ //load nhac 
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
-
 const optionsList = document.querySelectorAll(".option");
 
 selected.addEventListener("click", () => {
@@ -37,10 +32,13 @@ var locatX = -1;
 var locatY = -1;
 var hasFocus = true;
 
+
+//tao moi 1 tien trinh
 var abc = setInterval(function () {
   timerFunc(hasFocus);
 }, 100);
 
+//hien thi thoi gian con lai
 function timerFunc(bool) {
   var timer = document.getElementById("timer");
   var minutes = Math.floor(secondsRemaining / 60);
@@ -82,7 +80,7 @@ function timerFunc(bool) {
 //   }
 }
 
-//ss
+//check out khoi man hinh
 function addEvent(obj, evt, fn) {
   if (obj.addEventListener) {
     obj.addEventListener(evt, fn, false);
@@ -125,6 +123,7 @@ addEvent(window, "load", function (e) {
   });
 });
 
+//ham chay tien trinh
 function runtime(hasFocus) {
   clearInterval(abc);
   abc = setInterval(function () {
@@ -135,24 +134,32 @@ function runtime(hasFocus) {
   var gift = (document.getElementById("gift-content3").innerHTML = "");
 }
 
+// thong bao chuc mung
 function showDialog() {
   Swal.fire({
   icon: 'success',
-  title: 'Chuc mung'
+  title: 'Chúc mừng bạn đã hoàn thành thử thách'
 });
 }
 
+// timepicker
 $(function () {
   $('#datetimepicker3').datetimepicker({
-  format: 'mm:ss',                 
+  format: 'HH:mm:ss',                 
   defaultDate: moment('2015-01-01'),
   useCurrent:'day',
   }).on('dp.change', function (event) {
     var timepicker = $("#datetimepicker").val();
     var secondConvert = timepicker.split(':'); 
-    var seconds = ((secondConvert[0]) * 60 + (+secondConvert[1])); 
-    totalTime = seconds;
-    secondsRemaining = seconds;
+    var seconds = ((secondConvert[0]) * 60 + (+secondConvert[1]));
+    if(seconds == 0) {
+      totalTime = 15;
+      secondsRemaining = 15;
+    } else {
+      totalTime = seconds;
+      secondsRemaining = seconds;
+    }
+   
  
     runtime(hasFocus);
   });;
