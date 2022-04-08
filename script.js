@@ -144,22 +144,3 @@ function showDialog() {
   title: 'Chuc mung'
 });
 }
-
-$('.timepicker').timepicker({
-    timeFormat: 'm:ss',
-    interval: 5,
-    minTime: '0:01',
-    maxTime: '0:20',
-    dynamic: false,
-    dropdown: true,
-    scrollbar: true
-});
-
-(function($) {
-    $(function() {
-        $("#getdate").on('click',function(){
-           $("#time").text($(".timepicker").val())
-        })
-    });
-
-})(jQuery);
