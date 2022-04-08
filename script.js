@@ -65,7 +65,6 @@ function timerFunc(bool) {
   }
   console.log("bool-timer:" + bool);
 
-  //thoi gian con lai cho nay (Y)
   if (Math.round(secondsRemaining) == 40) {
     var gift = (document.getElementById("gift-content1").innerHTML =
       '<a href="https://www.google.com/search?q=g%C3%A1i+xinh&rlz=1C1KNTJ_enVN979VN979&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi3xfn78aT2AhU2QfUHHTCmCacQ_AUoAXoECAEQAw&biw=1745&bih=890&dpr=1.1">Bộ sưu tập ảnh gái xinh</a>');
@@ -80,7 +79,6 @@ function timerFunc(bool) {
     var gift = (document.getElementById("gift-content3").innerHTML =
       '<a href="https://www.google.com/search?q=tr%E1%BA%A7n+%C4%91%E1%BB%A9c+bo+kh%E1%BB%8Fa+th%C3%A2n&tbm=isch&ved=2ahUKEwi8tLuS8qT2AhVSEXAKHeMsBK4Q2-cCegQIABAA&oq=tr%E1%BA%A7n+%C4%91%E1%BB%A9c+bo+kh%E1%BB%8Fa+th%C3%A2n&gs_lcp=CgNpbWcQAzoECAAQAzoFCAAQgAQ6CAgAELEDEIMBOggIABCABBCxAzoECAAQEzoICAAQBRAeEBM6BAgAEEM6CggAELEDEIMBEEM6BwgAELEDEEM6CwgAEIAEELEDEIMBOgQIABAeOgYIABAFEB46BggAEAgQHjoECAAQGFCqFFjOMWDkMmgPcAB4BIAB6wGIAa8dkgEHMTkuMTYuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=mg4eYrz_BdKiwAPj2ZDwCg&bih=890&biw=1745&rlz=1C1KNTJ_enVN979VN979">Bộ sưu tập ảnh gái không xinh nhưng nude =]]</a>');
 
-    //Swal.fire('Địt mẹ giỏi lắm')
   }
 }
 
@@ -99,7 +97,6 @@ addEvent(window, "load", function (e) {
     var from = e.relatedTarget || e.toElement;
     if (!from || from.nodeName == "HTML") {
       if (hasFocus == true) {
-        //clearInterval(abc);
         hasFocus = false;
         locatX = -1;
         locatY = -1;
@@ -121,7 +118,6 @@ addEvent(window, "load", function (e) {
             locatX = event.pageX;
             locatY = event.pageY;
             console.log("hasFocus " + hasFocus + locatX + ", " + locatY);
-            //alert("con chó này, kiên trì lên");
             runtime(hasFocus);
           }
         }
@@ -131,7 +127,6 @@ addEvent(window, "load", function (e) {
 });
 
 function runtime(hasFocus) {
-  //timer.innerHTML = "30:00";
   clearInterval(abc);
   abc = setInterval(function () {
     timerFunc(hasFocus);
