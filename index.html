@@ -6,7 +6,10 @@
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 <!--     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script> -->
     <script src="sweetalert2.all.min.js"></script>
-  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
     
     <!-- 
       This is an HTML comment
@@ -15,15 +18,27 @@
 
     <title>Website ngồi thiền</title>
 
-    <style></style>
-    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body style="width: 100%; height: 100%">
     <h1>Vui lòng không thao tác với bàn phím và chuột</h1>
+    
+    <!--     timepicker -->
+    <div style="container">
+      <input id="timepkr" style="width:100px;float:left;" class="form-control" placeholder="HH:MM" />
+      <button type="button" class="btn btn-primary" onclick="showpickers('timepkr',24)" style="width:40px;float:left;"><i class="fa fa-clock-o"></i> </button>
+    </div>
+    <div class="timepicker"></div> 
+<!--      -->
+    
     <h2>
       Hãy thư giản và tập trung vào âm nhạc. <br />
       Đeo tai nghe để có trải nghiệm tốt nhất.
     </h2>
+    
+    
+
+    
     <h1><p id="timer">1:00</p></h1>
     <div>
       <audio controls autoplay id="myAudio">
@@ -34,18 +49,6 @@
       </audio>
     </div>
     
-<!--   <button onclick="showDialog()">
-    ssss
-    </button>
-    <script>
-      function test() {
-        Swal.fire({
-  icon: 'success',
-  title: 'Your work has been saved'
-});
-      }
-        
-    </script> -->
     <h3>Pick Music</h3>
     <div class="container">
       <div class="select-box">
