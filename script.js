@@ -42,8 +42,8 @@ var abc = setInterval(function () {
 function timerFunc(bool) {
   var timer = document.getElementById("timer");
   var hours = Math.floor(secondsRemaining/60/60);
-  var minutes = Math.floor((secondsRemaining - hours**60) / 60);
-  var seconds = minutes - minutes * 60;
+  var minutes = Math.floor((secondsRemaining - hours*60*60) / 60);
+  var seconds = secondsRemaining - hours * 60 * 60 - minutes *60;
   var fixedMin = minutes.toFixed();
   if (fixedMin == 60) {
     fixedMin = "0";
@@ -56,9 +56,14 @@ function timerFunc(bool) {
     fixedSec = "0";
     minutes = minutes + 1;
   }
-  if (fixedMin < 10 && fixedSec >= 0) fixedSec = "0" + fixedSec;
+  if (fixedSec < 10 && fixedSec >= 0) fixedSec = "0" + fixedSec;
+  
+  if(hours == 0) {
+    var time = fixedMin + ":" + fixedSec;
+  } else {
+    var time = hours + ":" + fixedMin + ":" + fixedSec;
+  }
 
-  var time = hours + ":" + fixedMin + ":" + fixedSec;
   timer.innerHTML = time;
   if (bool) {
     secondsRemaining -= 0.1;
