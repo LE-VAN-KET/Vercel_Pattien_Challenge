@@ -146,12 +146,11 @@ function showDialog() {
 }
 
 $('.timepicker').timepicker({
-    timeFormat: 'mm:ss ',
-    interval: 2,
-    minTime: '1:00',
-    maxTime: '20:00',
-    startTime: '1:00',
+    timeFormat: 'm:ss',
+    interval: 5,
+    minTime: '0:01',
+    maxTime: '0:20',
     dynamic: false,
     dropdown: true,
-    scrollbar: false
+    scrollbar: true
 });
