@@ -154,3 +154,12 @@ $('.timepicker').timepicker({
     dropdown: true,
     scrollbar: true
 });
+
+(function($) {
+    $(function() {
+        $("#getdate").on('click',function(){
+           $("#time").text($(".timepicker").val())
+        })
+    });
+
+})(jQuery);
