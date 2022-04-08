@@ -40,6 +40,7 @@ var hasFocus = true;
 var abc = setInterval(function () {
   timerFunc(hasFocus);
 }, 100);
+
 function timerFunc(bool) {
   var timer = document.getElementById("timer");
   var minutes = Math.floor(secondsRemaining / 60);
@@ -147,12 +148,15 @@ $(function () {
   useCurrent:'day'
   }).on('dp.change', function (event) {
     var timepicker = $("#datetimepicker").val();
-    console.log(timepicker);
-    var secondConvert = timepicker.split(':'); // split it at the colons
-
-// minutes are worth 60 seconds. Hours are worth 60 minutes.
+    var secondConvert = timepicker.split(':'); 
     var seconds = ((secondConvert[0]) * 60 + (+secondConvert[1])); 
-    abc;
+    totalTime = seconds;
+    secondsRemaining = seconds;
+ 
+    clearInterval(abc);
+    abc = setInterval(function () {
+      timerFunc(hasFocus);
+    }, 100);
     console.log("second: ", seconds);
   });;
   
