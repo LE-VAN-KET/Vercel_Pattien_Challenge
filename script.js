@@ -41,16 +41,24 @@ var abc = setInterval(function () {
 //hien thi thoi gian con lai
 function timerFunc(bool) {
   var timer = document.getElementById("timer");
-  var minutes = Math.floor(secondsRemaining / 60);
-  var seconds = secondsRemaining - minutes * 60;
-  var fixedNum = seconds.toFixed();
-  if (fixedNum == 60) {
-    fixedNum = "0";
+  var hours = Math.floor(secondsRemaining/60/60);
+  var minutes = Math.floor((secondsRemaining - hours**60) / 60);
+  var seconds = minutes - minutes * 60;
+  var fixedMin = minutes.toFixed();
+  if (fixedMin == 60) {
+    fixedMin = "0";
+    hours = hours + 1;
+  }
+  if (fixedMin < 10 && fixedMin >= 0) fixedMin = "0" + fixedMin;
+  
+  var fixedSec = seconds.toFixed();
+  if (fixedSec == 60) {
+    fixedSec = "0";
     minutes = minutes + 1;
   }
-  if (fixedNum < 10 && fixedNum >= 0) fixedNum = "0" + fixedNum;
+  if (fixedMin < 10 && fixedSec >= 0) fixedSec = "0" + fixedSec;
 
-  var time = minutes + ":" + fixedNum;
+  var time = hours + ":" + fixedMin + ":" + fixedSec;
   timer.innerHTML = time;
   if (bool) {
     secondsRemaining -= 0.1;
@@ -151,7 +159,7 @@ $(function () {
   }).on('dp.change', function (event) {
     var timepicker = $("#datetimepicker").val();
     var secondConvert = timepicker.split(':'); 
-    var seconds = ((secondConvert[0]) * 60 + (+secondConvert[1]));
+    var seconds = ((secondConvert[0]) * 60 * 60 + (secondConvert[1]) * 60 + (+secondConvert[2]));
     if(seconds == 0) {
       totalTime = 15;
       secondsRemaining = 15;
