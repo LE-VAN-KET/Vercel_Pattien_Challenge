@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <script src="sweetalert2.all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Grape Nuts" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -19,8 +21,11 @@
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js"
     ></script>
-
-
+    <style>
+      body {
+          font-family: 'Grape Nuts';
+      }
+    </style>
     
     <!-- 
       This is an HTML comment
@@ -30,16 +35,19 @@
     <title>Website ngồi thiền</title>
   </head>
   <body class="" style="width: 100%; height: 100%">
-    <h1>Vui lòng không thao tác với bàn phím và chuột</h1>
+    <div>
+      <h1>Vui lòng không rời khỏi trang web</h1>
 
-    <h2>
-      Hãy thư giản và tập trung vào âm nhạc. <br />
-      Đeo tai nghe để có trải nghiệm tốt nhất.
-    </h2>
+      <h2>
+        Hãy thư giản và tập trung vào âm nhạc. <br />
+        Đeo tai nghe để có trải nghiệm tốt nhất.
+      </h2>
+      
+      <h1 style="margin-top:50px; font-size: 120px"><p id="timer">00:00</p></h1>
+      
+    </div>
     
-    
-   
-    <h1 style="margin-top:50px; font-size: 120px"><p id="timer">00:00</p></h1>
+<!--     audio -->
     <div style="margin-top:50px;">
       <audio controls autoplay id="myAudio">
         <source
@@ -49,6 +57,7 @@
       </audio>
     </div>
     
+<!--   time picker   -->
     <div class="container" style="width:200px; margin-top:50px">
       <div class="row">
           <div class="col-sm-12">

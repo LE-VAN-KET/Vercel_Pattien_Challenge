@@ -24,7 +24,7 @@ h3 {
 
 body {
   color: blue;
-  font-family: Arial, Geneva, Kalimati, sans-serif;
+
   font-size: 13px;
   background: #000000
     url(https://cdn.glitch.global/ca028f5b-94a0-4458-80d5-b055f593ba7d/noob.jpg?v=1646136464957)
@@ -35,7 +35,7 @@ body {
   padding: 0;
   text-align: center;
   color: white;
-  opacity: 0.6;
+
 }
 
 a {

@@ -66,21 +66,20 @@ function timerFunc(bool) {
   }
   console.log("bool-timer:" + bool);
 
-  if (Math.round(secondsRemaining) == (totalTime/2)) {
-    var gift = (document.getElementById("gift-content1").innerHTML =
-      '<a href="https://www.google.com/search?q=g%C3%A1i+xinh&rlz=1C1KNTJ_enVN979VN979&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi3xfn78aT2AhU2QfUHHTCmCacQ_AUoAXoECAEQAw&biw=1745&bih=890&dpr=1.1">Bộ sưu tập ảnh gái xinh</a>');
-  }
+//   if (Math.round(secondsRemaining) == (totalTime/2)) {
+//     var gift = (document.getElementById("gift-content1").innerHTML =
+//       '<a href="https://www.google.com/search?q=g%C3%A1i+xinh&rlz=1C1KNTJ_enVN979VN979&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi3xfn78aT2AhU2QfUHHTCmCacQ_AUoAXoECAEQAw&biw=1745&bih=890&dpr=1.1">Bộ sưu tập ảnh gái xinh</a>');
+//   }
 
-  if (Math.round(secondsRemaining) == (totalTime/4)) {
-    var gift = (document.getElementById("gift-content2").innerHTML =
-      '<a href="https://www.google.com/search?q=g%C3%A1i+xinh+ph%E1%BA%A7n+2&tbm=isch&ved=2ahUKEwjM3Nz88aT2AhUITfUHHTqEA40Q2-cCegQIABAA&oq=g%C3%A1i+xinh+ph%E1%BA%A7n+2&gs_lcp=CgNpbWcQAzoICAAQgAQQsQM6BAgAEAM6CwgAEIAEELEDEIMBOgUIABCABDoECAAQQzoKCAAQsQMQgwEQQzoHCAAQsQMQQzoGCAAQBRAeOgYIABAIEB5Q8AhYshFg0xJoA3AAeACAAXiIAcIIkgEDOC4zmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bA4eYsz2Hoia1e8PuoiO6Ag&bih=890&biw=1745&rlz=1C1KNTJ_enVN979VN979">Bộ sưu tập ảnh gái xinh part 2</a>');
-  }
+//   if (Math.round(secondsRemaining) == (totalTime/4)) {
+//     var gift = (document.getElementById("gift-content2").innerHTML =
+//       '<a href="https://www.google.com/search?q=g%C3%A1i+xinh+ph%E1%BA%A7n+2&tbm=isch&ved=2ahUKEwjM3Nz88aT2AhUITfUHHTqEA40Q2-cCegQIABAA&oq=g%C3%A1i+xinh+ph%E1%BA%A7n+2&gs_lcp=CgNpbWcQAzoICAAQgAQQsQM6BAgAEAM6CwgAEIAEELEDEIMBOgUIABCABDoECAAQQzoKCAAQsQMQgwEQQzoHCAAQsQMQQzoGCAAQBRAeOgYIABAIEB5Q8AhYshFg0xJoA3AAeACAAXiIAcIIkgEDOC4zmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=bA4eYsz2Hoia1e8PuoiO6Ag&bih=890&biw=1745&rlz=1C1KNTJ_enVN979VN979">Bộ sưu tập ảnh gái xinh part 2</a>');
+//   }
 
-  if (Math.round(secondsRemaining) == 0) {
-    var gift = (document.getElementById("gift-content3").innerHTML =
-      '<a href="https://www.google.com/search?q=tr%E1%BA%A7n+%C4%91%E1%BB%A9c+bo+kh%E1%BB%8Fa+th%C3%A2n&tbm=isch&ved=2ahUKEwi8tLuS8qT2AhVSEXAKHeMsBK4Q2-cCegQIABAA&oq=tr%E1%BA%A7n+%C4%91%E1%BB%A9c+bo+kh%E1%BB%8Fa+th%C3%A2n&gs_lcp=CgNpbWcQAzoECAAQAzoFCAAQgAQ6CAgAELEDEIMBOggIABCABBCxAzoECAAQEzoICAAQBRAeEBM6BAgAEEM6CggAELEDEIMBEEM6BwgAELEDEEM6CwgAEIAEELEDEIMBOgQIABAeOgYIABAFEB46BggAEAgQHjoECAAQGFCqFFjOMWDkMmgPcAB4BIAB6wGIAa8dkgEHMTkuMTYuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=mg4eYrz_BdKiwAPj2ZDwCg&bih=890&biw=1745&rlz=1C1KNTJ_enVN979VN979">Bộ sưu tập ảnh gái không xinh nhưng nude =]]</a>');
-
-  }
+//   if (Math.round(secondsRemaining) == 0) {
+//     var gift = (document.getElementById("gift-content3").innerHTML =
+//       '<a href="https://www.google.com/search?q=tr%E1%BA%A7n+%C4%91%E1%BB%A9c+bo+kh%E1%BB%8Fa+th%C3%A2n&tbm=isch&ved=2ahUKEwi8tLuS8qT2AhVSEXAKHeMsBK4Q2-cCegQIABAA&oq=tr%E1%BA%A7n+%C4%91%E1%BB%A9c+bo+kh%E1%BB%8Fa+th%C3%A2n&gs_lcp=CgNpbWcQAzoECAAQAzoFCAAQgAQ6CAgAELEDEIMBOggIABCABBCxAzoECAAQEzoICAAQBRAeEBM6BAgAEEM6CggAELEDEIMBEEM6BwgAELEDEEM6CwgAEIAEELEDEIMBOgQIABAeOgYIABAFEB46BggAEAgQHjoECAAQGFCqFFjOMWDkMmgPcAB4BIAB6wGIAa8dkgEHMTkuMTYuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=mg4eYrz_BdKiwAPj2ZDwCg&bih=890&biw=1745&rlz=1C1KNTJ_enVN979VN979">Bộ sưu tập ảnh gái không xinh nhưng nude =]]</a>');
+//   }
 }
 
 //ss
@@ -114,7 +113,6 @@ addEvent(window, "load", function (e) {
       $(document).mousemove(function (event) {
         if (event.pageX != -1 || event.pageY != -1) {
           if (hasFocus == false) {
-            //clearInterval(abc);
             hasFocus = true;
             locatX = event.pageX;
             locatY = event.pageY;
@@ -132,6 +130,9 @@ function runtime(hasFocus) {
   abc = setInterval(function () {
     timerFunc(hasFocus);
   }, 100);
+  var gift = (document.getElementById("gift-content1").innerHTML = "");
+  var gift = (document.getElementById("gift-content2").innerHTML = "");
+  var gift = (document.getElementById("gift-content3").innerHTML = "");
 }
 
 function showDialog() {
@@ -153,11 +154,7 @@ $(function () {
     totalTime = seconds;
     secondsRemaining = seconds;
  
-    clearInterval(abc);
-    abc = setInterval(function () {
-      timerFunc(hasFocus);
-    }, 100);
-    console.log("second: ", seconds);
+    runtime(hasFocus);
   });;
   
 });
