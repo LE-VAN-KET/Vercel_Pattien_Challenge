@@ -145,5 +145,15 @@ $(function () {
   format: 'mm:ss',                 
   defaultDate: moment('2015-01-01'),
   useCurrent:'day'
-  });
+  }).on('dp.change', function (event) {
+    var timepicker = $("#datetimepicker").val();
+    console.log(timepicker);
+    var secondConvert = timepicker.split(':'); // split it at the colons
+
+// minutes are worth 60 seconds. Hours are worth 60 minutes.
+    var seconds = ((secondConvert[0]) * 60 + (+secondConvert[1])); 
+    abc;
+    console.log("second: ", seconds);
+  });;
+  
 });
