@@ -139,3 +139,11 @@ function showDialog() {
   title: 'Chuc mung'
 });
 }
+
+$(function () {
+  $('#datetimepicker3').datetimepicker({
+  format: 'mm:ss',                 
+  defaultDate: moment('2015-01-01'),
+  useCurrent:'day'
+  });
+});
