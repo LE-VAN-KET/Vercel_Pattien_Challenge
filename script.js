@@ -26,7 +26,7 @@ optionsList.forEach((o) => {
 
 // count down timer and action
 
-var totalTime = 10;
+var totalTime = 1800;
 var secondsRemaining = totalTime;
 var locatX = -1;
 var locatY = -1;
