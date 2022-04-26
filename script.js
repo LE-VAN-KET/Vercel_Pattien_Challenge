@@ -150,7 +150,7 @@ function runtime(hasFocus) {
 // thong bao chuc mung
 function showDialog() {
   Swal.fire({
-  icon: 'success',
+  icon: 'Success',
   title: 'Chúc mừng bạn đã hoàn thành thử thách'
 });
 }
