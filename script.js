@@ -533,7 +533,7 @@ $(document).ready(function () {
 
       // Tải thông tin bài hát đầu tiên vào UI khi chạy ứng dụng
       // Load the first song information into the UI when running the app
-      this.loadCurrentSong();
+      await this.loadCurrentSong();
 
       audio.on('loadedmetadata', function (e) {
         updateTime(time_duration, this.duration.toFixed());
