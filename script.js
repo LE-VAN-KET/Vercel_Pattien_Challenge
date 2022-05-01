@@ -537,9 +537,8 @@ const app = {
     // Load the first song information into the UI when running the app
     this.loadCurrentSong();
 
-    audio.on('loadedmetadata', async function (e) {
-      await updateTime(time_duration, this.duration.toFixed());
-      audio.trigger('play');
+    audio.on('loadedmetadata', function (e) {
+      updateTime(time_duration, this.duration.toFixed());
     })
 
     // Render playlist
@@ -549,7 +548,9 @@ const app = {
     // Display the initial state of the repeat & random button
     randomBtn.toggleClass("active", this.isRandom);
     repeatBtn.toggleClass("active", this.isRepeat);
+    audio.trigger('play');
   }
+
 }
 
 app.start()
