@@ -539,6 +539,7 @@ const app = {
 
     audio.on('loadedmetadata', function (e) {
       updateTime(time_duration, this.duration.toFixed());
+      audio.trigger('play');
     })
 
     // Render playlist
