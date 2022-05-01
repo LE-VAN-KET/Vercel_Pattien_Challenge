@@ -176,11 +176,6 @@ $(function () {
 
 });
 
-
-$(document).ready(function () {
-  var songs_category = []
-
-
   const loadSongsByCategory = async function (e) {
     let songs = []
     songs = await $.getJSON('data_songs.json');
@@ -208,6 +203,10 @@ $(document).ready(function () {
     $('.playlist').html(htmls.join(''));
   }
 
+
+
+$(document).ready(function () {
+  var songs_category = []
 
   const loadCategories = async () => {
     // load data music categories
@@ -261,7 +260,6 @@ $(document).ready(function () {
   }
 
   loadCategories();
-
 
   function updateTime($element, seconds) {
     let sec = seconds % 60;
@@ -546,10 +544,8 @@ $(document).ready(function () {
       // Display the initial state of the repeat & random button
       randomBtn.toggleClass("active", this.isRandom);
       repeatBtn.toggleClass("active", this.isRepeat);
-      audio.on('canplaythrough', (event) => {
-        audio.attr('muted', false);
-        audio.trigger('play');
-      });
+      audio.attr('muted', false);
+      document.getElementById('audio').play();
 
     }
 
