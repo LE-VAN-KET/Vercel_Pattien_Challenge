@@ -533,7 +533,7 @@ $(document).ready(function () {
 
       // Tải thông tin bài hát đầu tiên vào UI khi chạy ứng dụng
       // Load the first song information into the UI when running the app
-      await this.loadCurrentSong();
+      this.loadCurrentSong();
 
       audio.on('loadedmetadata', function (e) {
         updateTime(time_duration, this.duration.toFixed());
@@ -546,8 +546,11 @@ $(document).ready(function () {
       // Display the initial state of the repeat & random button
       randomBtn.toggleClass("active", this.isRandom);
       repeatBtn.toggleClass("active", this.isRepeat);
-      audio.attr('muted', false);
-      audio.trigger('play');
+      audio.on('canplaythrough', (event) => {
+        audio.attr('muted', false);
+        audio.trigger('play');
+      });
+
     }
 
   }
