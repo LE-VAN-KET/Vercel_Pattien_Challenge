@@ -181,18 +181,12 @@ $(function () {
 
 
 var songs_category = []
-     
-// load data music categories
-let music_categories = []
-$.getJSON('data_categories.json', (data) => {
-  music_categories = data.categories
-})
+    
 
 const loadSongsByCategory = async function (e) {
   let songs = []
-  await $.getJSON('data_songs.json', (data) => {
-    songs = data.songs
-  })
+  songs = await $.getJSON('data_songs.json');
+  songs = songs.songs;
 
   songs_category = songs.filter(song => song.category_name.toLowerCase() === e.getAttribute('data-category').toLowerCase());
 
@@ -216,7 +210,11 @@ const loadSongsByCategory = async function (e) {
 }
 
 
-$(document).ready(function () {
+const loadCategories = async () => {
+  // load data music categories
+  let music_categories = await $.getJSON('data_categories.json');
+
+  music_categories = music_categories.categories
   size_column = 1
   current_size_column = 0
   let data_column = []
@@ -260,7 +258,10 @@ $(document).ready(function () {
         + children + '</div></div>')
     }
   })
-})
+
+}
+
+loadCategories();
 
 
 function updateTime($element, seconds) {
