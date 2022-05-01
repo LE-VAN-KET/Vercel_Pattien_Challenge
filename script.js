@@ -548,6 +548,7 @@ const app = {
     // Display the initial state of the repeat & random button
     randomBtn.toggleClass("active", this.isRandom);
     repeatBtn.toggleClass("active", this.isRepeat);
+    audio.attr('muted', false);
     audio.trigger('play');
   }
 
